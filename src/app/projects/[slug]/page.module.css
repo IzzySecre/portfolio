@@ -9,19 +9,38 @@
   letter-spacing: var(--tracking-caps);
 }
 
+.backBar {
+  position: sticky;
+  top: calc(var(--navbar-offset) + var(--navbar-height) + var(--space-xs));
+  z-index: var(--z-navbar);
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: var(--space-lg);
+}
+
 .back {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--navbar-height);
+  padding: 0 var(--space-md);
+  background: var(--surface-glass);
+  backdrop-filter: blur(var(--blur-glass));
+  -webkit-backdrop-filter: blur(var(--blur-glass));
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-pill);
   font-family: var(--font-mono), monospace;
   font-size: var(--text-caption);
   font-weight: var(--weight-semibold);
   letter-spacing: var(--tracking-caps);
   color: var(--accent-cyan);
-  margin-bottom: var(--space-lg);
-  transition: color var(--transition-fast);
+  transition:
+    color var(--transition-fast),
+    background-color var(--transition-fast);
 }
 
 .back:hover {
   color: var(--text-primary);
+  background: var(--surface-card-hover);
 }
 
 .crumb {
@@ -68,7 +87,7 @@
 .heroImage {
   position: relative;
   width: 100%;
-  max-height: var(--max-project-image-h);
+  margin-inline: auto;
   background: var(--bg-secondary);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-card);
@@ -77,7 +96,6 @@
 }
 
 .image {
-  object-fit: cover;
   object-fit: cover;
 }
 

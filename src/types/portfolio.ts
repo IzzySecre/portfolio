@@ -30,8 +30,6 @@ export type PortfolioCategorySlug =
   | "social-media-carousel"
   | "banner-design";
 
-export type PortfolioAspectRatio = "16/10" | "3/4" | "1/1" | "4/5";
-
 export interface PortfolioItem {
   id: string;
   slug: string;
@@ -40,6 +38,8 @@ export interface PortfolioItem {
   role: string;
   tools: string[];
   thumbnailUrl: string;
+  width: number;
+  height: number;
   description: string;
   liveUrl?: string;
   repoUrl?: string;
@@ -49,7 +49,6 @@ export interface PortfolioSectionGroup {
   number: string;
   slug: PortfolioCategorySlug;
   title: string;
-  aspectRatio: PortfolioAspectRatio;
   items: PortfolioItem[];
 }
 

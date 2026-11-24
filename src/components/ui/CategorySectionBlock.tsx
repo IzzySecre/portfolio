@@ -37,7 +37,7 @@ export function CategorySectionBlock({ section }: CategorySectionBlockProps) {
         <ul className={styles.grid}>
           {section.items.map((item) => (
             <li key={item.id}>
-              <ProjectCard item={item} aspectRatio={section.aspectRatio} />
+              <ProjectCard item={item} />
             </li>
           ))}
         </ul>

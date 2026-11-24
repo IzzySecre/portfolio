@@ -111,7 +111,8 @@
   --max-jump-list: 28rem;
   --max-archive-row: 24rem;
   --max-placeholder-h: 420px;
-  --max-project-image-h: 520px;
+  --thumb-max-h: 24rem;
+  --thumb-max-w: 30rem;
 }
 
 @media (min-width: 640px) {

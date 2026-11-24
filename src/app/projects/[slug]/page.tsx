@@ -20,9 +20,11 @@ async function ProjectContent({ slug }: { slug: string }) {
 
   return (
     <>
-      <Link href="/#projects" className={styles.back}>
-        ← BACK TO GALLERY
-      </Link>
+      <div className={styles.backBar}>
+        <Link href="/#projects" className={styles.back}>
+          ← BACK TO GALLERY
+        </Link>
+      </div>
 
       <p className={styles.crumb}>
         {section.number}. {section.title}
@@ -46,7 +48,7 @@ async function ProjectContent({ slug }: { slug: string }) {
 
       <div
         className={styles.heroImage}
-        style={{ aspectRatio: section.aspectRatio.replace("/", " / ") }}
+        style={{ aspectRatio: `${item.width} / ${item.height}` }}
       >
         <Image
           src={item.thumbnailUrl}

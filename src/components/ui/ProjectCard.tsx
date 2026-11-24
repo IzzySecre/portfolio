@@ -5,22 +5,25 @@ import styles from "./ProjectCard.module.css";
 
 interface ProjectCardProps {
   item: PortfolioItem;
-  aspectRatio: string;
 }
 
-export function ProjectCard({ item, aspectRatio }: ProjectCardProps) {
+export function ProjectCard({ item }: ProjectCardProps) {
+  const { width, height } = item;
   return (
     <article className={styles.card}>
       <Link href={`/projects/${item.slug}`} className={styles.link}>
         <div
           className={styles.thumb}
-          style={{ aspectRatio: aspectRatio.replace("/", " / ") }}
+          style={{
+            aspectRatio: `${width} / ${height}`,
+            width: `min(100%, var(--thumb-max-w), calc(var(--thumb-max-h) * ${width} / ${height}))`,
+          }}
         >
           <Image
             src={item.thumbnailUrl}
             alt={item.title}
             fill
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            sizes="(max-width: 640px) 100vw, 480px"
             className={styles.image}
           />
         </div>

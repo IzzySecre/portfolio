@@ -4,20 +4,31 @@ import { useEffect, useState } from "react";
 import styles from "./FloatingNavbar.module.css";
 
 const NAV_ITEMS = [
+  { label: "HOME", href: "#top" },
   { label: "PROFILE", href: "#profile" },
   { label: "PROJECTS", href: "#projects" },
   { label: "CONTACT", href: "#contact" },
 ] as const;
 
+const SECTION_ITEMS = NAV_ITEMS.filter((item) => item.href !== "#top");
+
 export function FloatingNavbar() {
-  const [active, setActive] = useState<string>("#profile");
+  const [active, setActive] = useState<string>("#top");
 
   useEffect(() => {
-    const sections = NAV_ITEMS.map((item) =>
+    const sections = SECTION_ITEMS.map((item) =>
       document.querySelector(item.href)
     ).filter((el): el is Element => el !== null);
 
-    if (sections.length === 0) return;
+    const handleScroll = () => {
+      if (window.scrollY < 80) setActive("#top");
+    };
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    if (sections.length === 0) {
+      return () => window.removeEventListener("scroll", handleScroll);
+    }
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -36,7 +47,10 @@ export function FloatingNavbar() {
     );
 
     sections.forEach((section) => observer.observe(section));
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
