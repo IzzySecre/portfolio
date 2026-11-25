@@ -11,7 +11,7 @@
 
 .backBar {
   position: sticky;
-  top: calc(var(--navbar-offset) + var(--navbar-height) + var(--space-xs));
+  top: calc(var(--nav-clearance) + var(--space-xs));
   z-index: var(--z-navbar);
   display: flex;
   justify-content: flex-start;

@@ -22,7 +22,7 @@ export function AboutSection({ profile }: AboutSectionProps) {
           </h2>
           <div className={styles.portraitFrame}>
             <Image
-              src="/images/assets/profile/about-contact.webp"
+              src="/images/assets/profile/about.webp"
               alt="Elha Catur Rohman"
               fill
               sizes="(max-width: 1024px) 100vw, 380px"

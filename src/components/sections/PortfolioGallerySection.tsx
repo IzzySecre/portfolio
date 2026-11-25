@@ -15,7 +15,7 @@ export function PortfolioGallerySection({
       className={`section ${styles.gallery}`}
       aria-labelledby="gallery-heading"
     >
-      <div className="container">
+      <div className={`container ${styles.container}`}>
         <header className={styles.header}>
           <div className={styles.headerText}>
             <p className={styles.eyebrow}>SELECTED WORK</p>

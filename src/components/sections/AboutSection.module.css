@@ -1,5 +1,5 @@
 .about {
-  background: var(--bg-radial-glow);
+  background: var(--bg-primary);
 }
 
 .grid {
@@ -190,6 +190,6 @@
 
   .visualCol {
     position: sticky;
-    top: calc(var(--navbar-height) + var(--navbar-offset) + var(--space-lg));
+    top: calc(var(--nav-clearance) + var(--space-lg));
   }
 }

@@ -4,7 +4,7 @@
 
 .grid {
   display: grid;
-  gap: var(--space-2xl);
+  gap: var(--space-xl);
 }
 
 .leftCol {
@@ -107,7 +107,7 @@
 
 .archiveYear {
   font-family: var(--font-display), sans-serif;
-  font-size: var(--text-h2);
+  font-size: var(--text-h3);
   color: var(--text-primary);
   letter-spacing: var(--tracking-display);
 }

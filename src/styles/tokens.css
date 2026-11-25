@@ -35,7 +35,6 @@
   --text-h3: 1.125rem;
   --text-body: 0.9375rem;
   --text-caption: 0.75rem;
-  --text-eyebrow: 0.8125rem;
 
   --lh-hero: 0.95;
   --lh-h1: 1.05;
@@ -49,7 +48,6 @@
   --tracking-caps: 0.08em;
 
   --weight-regular: 400;
-  --weight-medium: 500;
   --weight-semibold: 600;
   --weight-bold: 700;
 
@@ -65,8 +63,6 @@
   --space-3xs: 0.125rem;
   --space-2xs: 0.375rem;
   --space-sm-md: 0.75rem;
-  --space-md-lg: 1.25rem;
-  --space-lg-xl: 2rem;
   --space-section-y: clamp(3.5rem, 8vw, 5rem);
   --space-page-x: clamp(1.25rem, 4vw, 2rem);
 
@@ -74,16 +70,14 @@
   --radius-pill: 9999px;
   --radius-card: 16px;
   --radius-badge: 8px;
-  --radius-sm: 4px;
-  --radius-portrait: var(--radius-card);
 
   /* ── Layout ── */
   --container-max: 1200px;
   --container-pad-x: var(--space-page-x);
   --navbar-height: 3.25rem;
   --navbar-offset: 1.25rem;
+  --nav-clearance: calc(var(--navbar-height) + var(--navbar-offset));
   --z-navbar: 50;
-  --z-modal: 100;
 
   /* ── Effects ── */
   --blur-glass: 12px;
@@ -94,7 +88,6 @@
   /* ── Component-specific sizes ── */
   --icon-skill: 44px;
   --avatar-contact: 96px;
-  --avatar-sm: 40px;
   --placeholder-min-h: 220px;
   --progress-track-h: 8px;
   --divider-w: 48px;
@@ -111,8 +104,6 @@
   --max-jump-list: 28rem;
   --max-archive-row: 24rem;
   --max-placeholder-h: 420px;
-  --thumb-max-h: 24rem;
-  --thumb-max-w: 30rem;
 }
 
 @media (min-width: 640px) {
@@ -132,6 +123,5 @@
     --text-h2: 1.75rem;
     --text-h3: 1.25rem;
     --text-body: 1rem;
-    --text-caption: 0.75rem;
   }
 }

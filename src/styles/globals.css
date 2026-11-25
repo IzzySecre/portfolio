@@ -104,7 +104,7 @@ p {
 
 .section {
   padding-block: var(--space-section-y);
-  scroll-margin-top: calc(var(--navbar-height) + var(--navbar-offset) + var(--space-md));
+  scroll-margin-top: calc(var(--nav-clearance) + var(--space-md));
 }
 
 .visually-hidden {

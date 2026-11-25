@@ -47,9 +47,8 @@ export const profile: ProfileData = {
     { name: "ENGLISH", level: 70 },
   ],
   socials: [
-    { label: "GitHub", href: "https://github.com/" },
-    { label: "LinkedIn", href: "https://linkedin.com/" },
-    { label: "Instagram", href: "https://instagram.com/" },
-    { label: "Email", href: "mailto:hello@example.com" },
+    { label: "GitHub", href: "https://github.com/IzzySecre" },
+    { label: "Instagram", href: "https://www.instagram.com/_caturrohman/" },
+    { label: "Email", href: "mailto:elharohman1007@gmail.com" },
   ],
 };

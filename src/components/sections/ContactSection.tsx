@@ -107,7 +107,7 @@ export function ContactSection({ socials }: ContactSectionProps) {
 
           <div className={styles.avatar}>
             <Image
-              src="/images/assets/profile/about-contact.webp"
+              src="/images/assets/profile/contact.webp"
               alt="Elha Catur Rohman"
               width={96}
               height={96}
@@ -131,14 +131,14 @@ export function ContactSection({ socials }: ContactSectionProps) {
           </ul>
 
           <div className={styles.archives}>
-            <a href="#projects" className={styles.archiveCard}>
-              <span className={styles.archiveLabel}>PORTFOLIO</span>
-              <span className={styles.archiveYear}>2024</span>
-            </a>
-            <a href="#projects" className={styles.archiveCard}>
-              <span className={styles.archiveLabel}>ARCHIVE</span>
-              <span className={styles.archiveYear}>2025</span>
-            </a>
+            <div className={styles.archiveCard}>
+              <span className={styles.archiveLabel}>AVAILABILITY</span>
+              <span className={styles.archiveYear}>Open to work</span>
+            </div>
+            <div className={styles.archiveCard}>
+              <span className={styles.archiveLabel}>LOCATION</span>
+              <span className={styles.archiveYear}>Tuban, East Java</span>
+            </div>
           </div>
         </div>
 

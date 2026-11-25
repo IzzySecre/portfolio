@@ -8,17 +8,10 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ item }: ProjectCardProps) {
-  const { width, height } = item;
   return (
     <article className={styles.card}>
       <Link href={`/projects/${item.slug}`} className={styles.link}>
-        <div
-          className={styles.thumb}
-          style={{
-            aspectRatio: `${width} / ${height}`,
-            width: `min(100%, var(--thumb-max-w), calc(var(--thumb-max-h) * ${width} / ${height}))`,
-          }}
-        >
+        <div className={styles.thumb}>
           <Image
             src={item.thumbnailUrl}
             alt={item.title}

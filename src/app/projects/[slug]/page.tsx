@@ -40,10 +40,12 @@ async function ProjectContent({ slug }: { slug: string }) {
           <dt className={styles.dt}>Role</dt>
           <dd className={styles.dd}>{item.role}</dd>
         </div>
-        <div>
-          <dt className={styles.dt}>Tools</dt>
-          <dd className={styles.dd}>{item.tools.join(" · ")}</dd>
-        </div>
+        {item.tools.length > 0 && (
+          <div>
+            <dt className={styles.dt}>Tools</dt>
+            <dd className={styles.dd}>{item.tools.join(" · ")}</dd>
+          </div>
+        )}
       </dl>
 
       <div

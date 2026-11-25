@@ -2,7 +2,7 @@
   position: relative;
   padding-block: var(--space-lg) var(--space-section-y);
   background: var(--bg-radial-glow);
-  min-height: min(100vh, 900px);
+  min-height: min(calc(100svh - var(--navbar-height) + var(--space-lg)), 900px);
   display: flex;
   flex-direction: column;
   gap: var(--space-xl);
@@ -165,17 +165,11 @@
 
 @media (min-width: 768px) {
   .grid {
-    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    grid-template-columns: minmax(0, 4fr) minmax(0, 6fr);
     gap: var(--space-xl);
   }
 
   .portraitCol {
     justify-content: flex-start;
-  }
-}
-
-@media (min-width: 1024px) {
-  .grid {
-    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
   }
 }
