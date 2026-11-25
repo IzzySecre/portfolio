@@ -66,13 +66,13 @@
 }
 
 .title {
-  font-family: var(--font-display), sans-serif;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: var(--tracking-caps);
+  font-family: var(--font-display), Impact, sans-serif;
+  font-size: 1.25rem;
   color: var(--text-primary);
   margin: 0;
   line-height: var(--lh-h3);
+  letter-spacing: 0.12em;
+  font-weight: var(--weight-regular);
 }
 
 .tools {

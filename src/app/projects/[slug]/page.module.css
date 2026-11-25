@@ -53,10 +53,13 @@
 }
 
 .title {
+  font-family: var(--font-display), Impact, sans-serif;
   font-size: var(--text-h1);
   line-height: var(--lh-h1);
   color: var(--text-primary);
   margin: 0 0 var(--space-lg);
+  letter-spacing: 0.08em;
+  font-weight: var(--weight-regular);
 }
 
 .metaGrid {

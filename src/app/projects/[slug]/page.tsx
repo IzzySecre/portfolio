@@ -29,7 +29,7 @@ async function ProjectContent({ slug }: { slug: string }) {
       <p className={styles.crumb}>
         {section.number}. {section.title}
       </p>
-      <h1 className={`font-display ${styles.title}`}>{item.title}</h1>
+      <h1 className={styles.title}>{item.title}</h1>
 
       <dl className={styles.metaGrid}>
         <div>
