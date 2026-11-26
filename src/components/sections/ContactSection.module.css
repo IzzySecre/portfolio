@@ -127,7 +127,7 @@
 
 .formLede {
   color: var(--text-secondary);
-  margin-bottom: var(--space-sm);
+  margin-bottom: 0;
 }
 
 .form {
@@ -235,7 +235,11 @@
 }
 
 .statusRegion {
-  min-height: var(--space-lg);
+  min-height: 0;
+}
+
+.statusRegion:empty {
+  margin-top: calc(var(--space-md) * -1);
 }
 
 .success {
