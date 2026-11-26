@@ -1,0 +1,6 @@
+.home > header {
+  position: fixed;
+  top: var(--navbar-offset);
+  left: 0;
+  right: 0;
+}

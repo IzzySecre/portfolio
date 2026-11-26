@@ -20,11 +20,6 @@ export const profile: ProfileData = {
       icon: "/images/assets/software/nextjs.webp",
     },
     { name: "CapCut", level: "Basic", icon: "/images/assets/software/capcut.webp" },
-    {
-      name: "Photoshop (Ps)",
-      level: "Basic",
-      icon: "/images/assets/software/photoshop.webp",
-    },
   ],
   education: {
     period: "2024–Present",

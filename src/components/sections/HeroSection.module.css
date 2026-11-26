@@ -1,8 +1,8 @@
 .hero {
   position: relative;
-  padding-block: var(--space-lg) var(--space-section-y);
+  padding-block: var(--navbar-height) var(--space-section-y);
   background: var(--bg-radial-glow);
-  min-height: min(calc(100svh - var(--navbar-height) + var(--space-lg)), 900px);
+  min-height: min(100svh, 900px);
   display: flex;
   flex-direction: column;
   gap: var(--space-xl);

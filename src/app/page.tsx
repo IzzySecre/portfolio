@@ -6,10 +6,11 @@ import { PortfolioGallerySection } from "@/components/sections/PortfolioGalleryS
 import { ContactSection } from "@/components/sections/ContactSection";
 import { profile } from "@/data/profile";
 import { portfolioSections } from "@/data/portfolio";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div id="top">
+    <div id="top" className={styles.home}>
       <FloatingNavbar />
       <main>
         <HeroSection
